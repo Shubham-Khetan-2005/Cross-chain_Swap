@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* small global helpers */
+:root {
+  --accent: #7c3aed;
+  --muted: #9aa4b2;
+  --glass: rgba(255,255,255,0.02);
+}
+
+/* apply a subtle gradient background and base text color */
+body {
+  @apply bg-gradient-to-b from-slate-900 to-slate-800 text-slate-100 min-h-screen;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* small card style */
+.card {
+  @apply bg-[color:var(--glass)] p-6 rounded-2xl shadow-sm;
+}
+
+/* small input style */
+.input {
+  @apply w-full rounded-lg bg-transparent border border-slate-700 px-3 py-2 text-slate-100;
+}
